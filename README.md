@@ -19,7 +19,7 @@ En el juego, los jugadores asumen el rol de un espía con habilidades únicas pa
 
 Este proyecto fue presentado como parte de mis estudios en el primer año de la universidad y fue elogiado por el director debido a su originalidad y las innovaciones técnicas que implementa, como la integración de física computacional y herramientas personalizadas para la manipulación de gráficos 2D.
 
-![Monje en Apuros](assets/img)
+![Monje en Apuros](img/img.png)
 
 ---
 

@@ -7,7 +7,15 @@ Low programming tools like **Dlc utilities** that enable to play *overlay*, *cam
 
 ---
 
-## IA de Reconocimiento de Perfiles por Voz
+## IA Voice recognition
+
+**Open source** use *Cnn* with *transformers* that automatic readjust(size, gray, color) for compatibility, using a base of *emotion recognition* with *(F1 > 84%)* and *voice characteristics*. 
+
+*Requirements* of dataset are *audio file format*(".wav" or use of convertor module) and *emotion tag*.
+
+*Functionality*
+Part 1 allow to *identify emotions* in audios.
+Part 2 allow to *profile creation* to easy recognition.
 
 Además del juego, el proyecto incluye una **inteligencia artificial** que es capaz de reconocer perfiles de personas usando una **combinación de características de voz** y **reconocimiento de emociones**. Utilizando redes neuronales avanzadas, la IA identifica patrones de voz y emociones con un **alto rango de precisión (F1 > 84%)** únicamente a partir del sonido.
 

@@ -1,23 +1,7 @@
-# Monje en Apuros: Juego de Aventura con Física Dinámica y Reconocimiento de Voz
+# Monk in trouble: Adventure game with dynamic physics and AI voice recognition
 
-## Descripción del Proyecto
-
-**Monje en Apuros** es un juego de aventura interactivo que explora la mecánica de un espía con el poder de **copiar objetos** a su alrededor, **modificar las leyes de la realidad** según su estado y manipular el **comportamiento físico** de la computadora. El juego está basado en un reto de **pixel art** y utiliza herramientas a medida como **cámara**, **menús interactivos con el mouse**, **tazas de refresco** como íconos y **hotkeys** para mejorar la experiencia.
-
-### Características del Juego:
-- **Cámara personalizada** para moverse por el escenario.
-- **Pixel art a medida** para el entorno y personajes.
-- **Menú interactivo** utilizando el mouse y teclas rápidas.
-- **Herramienta de segundo plano** con un **grado de translucidez**.
-- **Sistema de horarios internos** basado en "coach sessions" que afectan el comportamiento del juego.
-- **Protección dinámica** contra el frío dependiendo del estado térmico de la computadora.
-
-### Objetivo del Juego:
-En el juego, los jugadores asumen el rol de un espía con habilidades únicas para interactuar con el entorno. Al copiar objetos, modificar la realidad y adaptarse a las condiciones del ambiente (como la temperatura de la computadora), los jugadores deben superar obstáculos y resolver acertijos en una serie de niveles desafiantes.
-
-## Proyecto de Instituto
-
-Este proyecto fue presentado como parte de mis estudios en el primer año de la universidad y fue elogiado por el director debido a su originalidad y las innovaciones técnicas que implementa, como la integración de física computacional y herramientas personalizadas para la manipulación de gráficos 2D.
+**Summary** adventure *Pixel art* style from a spy called "Monk", based on a instution *retro challenges* project *recognized by the director* with skills like *mimetic objects by touch*, teleport and fights with secrets challenges that require to interact with the *real world*. 
+Low programming tools like **Dlc utilities** that enable to play *overlay*, *cam control*, *interactive mouse menu* to activate hotkeys, icons, autostart, calendar, create groups in *steam* and private chat.
 
 ![Monje en Apuros](assets/img/Untitled2.jpg)
 

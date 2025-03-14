@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ronaldo Monje - Software Engineer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Opcional para íconos -->
+</head>
+<body>
+
+  <!-- Título y descripción -->
+  <h1>Ronaldo Monje</h1>
+  <p>Software Engineer</p>
+
+  <!-- Botón para cambiar el tema -->
+  <button id="theme-toggle" onclick="changeTheme()">Cambiar Tema</button>
+
+  <!-- Aquí va el contenido de tu portfolio -->
+  <section>
+    <h2>Mis Proyectos</h2>
+    <p>Aquí irían tus proyectos, habilidades y demás información.</p>
+  </section>
+
+  <!-- Script de jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Incluye jQuery -->
+
+  <!-- Script para cambiar entre los temas -->
+  <script>
+    // Arreglo de temas disponibles
+    const themes = [
+      'jekyll-theme-minimal',
+      'jekyll-theme-dark',
+      'jekyll-theme-tactile',
+      'jekyll-theme-hacker',
+      'jekyll-theme-midnight'
+    ];
+
+    // Función para cambiar de tema
+    function changeTheme() {
+      let currentThemeIndex = localStorage.getItem("currentThemeIndex");
+      if (currentThemeIndex === null) {
+        currentThemeIndex = 0; // Iniciar desde el primer tema
+      } else {
+        currentThemeIndex = parseInt(currentThemeIndex);
+      }
+
+      // Incrementar el índice para el siguiente tema, o volver al primero si es el último
+      currentThemeIndex = (currentThemeIndex + 1) % themes.length;
+
+      // Establecer el nuevo tema
+      let newTheme = themes[currentThemeIndex];
+      localStorage.setItem("currentThemeIndex", currentThemeIndex); // Guardar en el localStorage
+
+      // Cambiar la clase del body para cambiar el tema
+      document.body.classList.remove(...themes);
+      document.body.classList.add(newTheme);
+    }
+
+    // Al cargar la página, establecer el tema previamente seleccionado
+    window.onload = function() {
+      let currentThemeIndex = localStorage.getItem("currentThemeIndex");
+      if (currentThemeIndex === null) {
+        currentThemeIndex = 0; // Si no hay tema guardado, usa el primer tema
+      } else {
+        currentThemeIndex = parseInt(currentThemeIndex);
+      }
+
+      document.body.classList.add(themes[currentThemeIndex]);
+    };
+  </script>
+
+  <!-- Estilos específicos para cada tema (puedes agregarlos aquí o en un archivo CSS separado) -->
+  <style>
+    body.jekyll-theme-minimal {
+      background-color: #fff;
+      color: #333;
+    }
+
+    body.jekyll-theme-dark {
+      background-color: #121212;
+      color: #e0e0e0;
+    }
+
+    body.jekyll-theme-tactile {
+      background-color: #333;
+      color: #fff;
+    }
+
+    body.jekyll-theme-hacker {
+      background-color: #1e1e1e;
+      color: #00ff00;
+    }
+
+    body.jekyll-theme-midnight {
+      background-color: #222;
+      color: #dcdcdc;
+    }
+  </style>
+
+</body>
+</html>

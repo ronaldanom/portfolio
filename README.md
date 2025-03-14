@@ -15,37 +15,6 @@ Low programming tools like **Dlc utilities** that enable to play *overlay*, *cam
 
 *Functionality*
 Part 1 allow to *identify emotions* in audios.
-Part 2 allow to *profile creation* to easy recognition.
-
-Además del juego, el proyecto incluye una **inteligencia artificial** que es capaz de reconocer perfiles de personas usando una **combinación de características de voz** y **reconocimiento de emociones**. Utilizando redes neuronales avanzadas, la IA identifica patrones de voz y emociones con un **alto rango de precisión (F1 > 84%)** únicamente a partir del sonido.
-
-### Características de la IA:
-- **Reconocimiento de voz** y características emocionales.
-- **Alta precisión en clasificación** con un F1 superior al 84%.
-- **Utiliza escalas de grises y colores** para mejorar la clasificación y el análisis de la voz.
-
-### Funcionalidad:
-- La IA toma como entrada **grabaciones de voz** y clasifica el perfil de la persona en función de sus emociones y características vocales.
-- Utiliza **redes neuronales convolucionales (CNN)** para reconocer patrones y mejorar continuamente el modelo.
-
----
-
-## Tecnologías Utilizadas
-
-### Juego - "Monje en Apuros":
-- **Java**: Lenguaje principal para el desarrollo del juego.
-- **LibGDX**: Framework para crear juegos en 2D.
-- **Pixel Art**: Herramientas personalizadas para crear gráficos pixelados.
-- **JavaFX** (opcional): Para interfaces gráficas y elementos secundarios.
-
-### IA:
-- **Python**: Lenguaje para la implementación de la IA.
-- **TensorFlow**: Framework para redes neuronales.
-- **Librosa**: Para el análisis de características de audio.
-- **OpenCV**: Para el procesamiento de imágenes y escalado de colores.
-- **Keras**: Para facilitar la construcción de redes neuronales profundas.
-
----
-
 ![Monje en Apuros](assets/img/Capture.PNG)
+Part 2 allow to *profile creation* to easy recognition.
 ![Monje en Apuros](assets/img/Capture1.PNG)

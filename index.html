@@ -5,12 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ronaldo Monje - Software Engineer</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Opcional para íconos -->
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}"> <!-- Si tienes un archivo CSS adicional -->
 </head>
 <body>
 
   <!-- Título y descripción -->
-  <h1>Ronaldo Monje</h1>
-  <p>Software Engineer</p>
+  <header>
+    <h1>Ronaldo Monje</h1>
+    <p>Software Engineer</p>
+  </header>
 
   <!-- Botón para cambiar el tema -->
   <button id="theme-toggle" onclick="changeTheme()">Cambiar Tema</button>
@@ -19,23 +22,18 @@
   <section>
     <h2>Mis Proyectos</h2>
     <p>Aquí irían tus proyectos, habilidades y demás información.</p>
+    <!-- Agrega más contenido aquí -->
   </section>
 
-  <!-- Script de jQuery -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Incluye jQuery -->
+  <section>
+    <h2>Sobre mí</h2>
+    <p>Información adicional sobre ti, tu experiencia y tus objetivos.</p>
+  </section>
 
   <!-- Script para cambiar entre los temas -->
   <script>
-    // Arreglo de temas disponibles
-    const themes = [
-      'jekyll-theme-minimal',
-      'jekyll-theme-dark',
-      'jekyll-theme-tactile',
-      'jekyll-theme-hacker',
-      'jekyll-theme-midnight'
-    ];
+    const themes = ['jekyll-theme-slate', 'jekyll-theme-dark', 'jekyll-theme-tactile', 'jekyll-theme-midnight'];
 
-    // Función para cambiar de tema
     function changeTheme() {
       let currentThemeIndex = localStorage.getItem("currentThemeIndex");
       if (currentThemeIndex === null) {
@@ -44,14 +42,10 @@
         currentThemeIndex = parseInt(currentThemeIndex);
       }
 
-      // Incrementar el índice para el siguiente tema, o volver al primero si es el último
       currentThemeIndex = (currentThemeIndex + 1) % themes.length;
-
-      // Establecer el nuevo tema
       let newTheme = themes[currentThemeIndex];
-      localStorage.setItem("currentThemeIndex", currentThemeIndex); // Guardar en el localStorage
+      localStorage.setItem("currentThemeIndex", currentThemeIndex);
 
-      // Cambiar la clase del body para cambiar el tema
       document.body.classList.remove(...themes);
       document.body.classList.add(newTheme);
     }
@@ -60,7 +54,7 @@
     window.onload = function() {
       let currentThemeIndex = localStorage.getItem("currentThemeIndex");
       if (currentThemeIndex === null) {
-        currentThemeIndex = 0; // Si no hay tema guardado, usa el primer tema
+        currentThemeIndex = 0;
       } else {
         currentThemeIndex = parseInt(currentThemeIndex);
       }
@@ -69,10 +63,10 @@
     };
   </script>
 
-  <!-- Estilos específicos para cada tema (puedes agregarlos aquí o en un archivo CSS separado) -->
+  <!-- Estilos para cada tema -->
   <style>
-    body.jekyll-theme-minimal {
-      background-color: #fff;
+    body.jekyll-theme-slate {
+      background-color: #f5f5f5;
       color: #333;
     }
 
@@ -84,11 +78,6 @@
     body.jekyll-theme-tactile {
       background-color: #333;
       color: #fff;
-    }
-
-    body.jekyll-theme-hacker {
-      background-color: #1e1e1e;
-      color: #00ff00;
     }
 
     body.jekyll-theme-midnight {

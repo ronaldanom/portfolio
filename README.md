@@ -1,7 +1,7 @@
 # Monk in trouble: Adventure game with dynamic physics and AI voice recognition
-
-**Summary** adventure *Pixel art* style from a spy called "Monk", based on a instution *retro challenges* project *recognized by the director* with skills like *mimetic objects by touch*, teleport and fights with secrets challenges that require to interact with the *real world*. 
-Low programming tools like **Dlc utilities** that enable to play *overlay*, *cam control*, *interactive mouse menu* to activate hotkeys, icons, autostart, calendar, create groups in *steam* and private chat.
+Coordinator of a game project *recognized by an institution director* 
+**Summary** adventure *Pixel art* style from a spy called "Monk", based on a instution *retro challenges* and jugability like *mimetic objects by touch*, teleport and fights with secrets challenges that require to interact with the *real world*. 
+Low programming tools like **Dlc utilities** main mechanic to play with *overlay*, *cam control*, *interactive mouse menu* and *steam functions* of icons, autostart, calendar, multiplayer and chat.
 
 ![Monje en Apuros](assets/img/Untitled2.jpg)
 
@@ -9,9 +9,9 @@ Low programming tools like **Dlc utilities** that enable to play *overlay*, *cam
 
 ## IA Voice recognition
 
-**Open source** use *Cnn* with *transformers* that automatic readjust(size, gray, color) for compatibility, using a base of *emotion recognition* with *(F1 > 84%)* and *voice characteristics*. 
+**Open source** patterns recognition system with *ia emotion recogntion* with *Neuronal network*, *trasnformation* and *intrepretation*. 
 
-*Requirements* of dataset are *audio file format*(".wav" or use of convertor module) and *emotion tag*.
+*Requirements* of *audio file* in WAV format and *tags*.
 
 *Functionality*
 Part 1 allow to *identify emotions* in audios.
